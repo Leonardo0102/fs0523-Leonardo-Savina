@@ -1,0 +1,53 @@
+/* IMPOSTAZIONI GENERALI */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400&display=swap" );
+body{
+    margin: 15px;
+    background-image: url(../img/sfondo.png);
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+
+
+/* HEADER */
+header{
+    padding: 25px 0;
+    margin-bottom: 20px;
+    background-image: linear-gradient(center);
+    background-color:rgba(0,118,139,255) ;
+}
+header img{
+    border: 1px solid;
+    
+    
+}
+header p {
+
+    font-size: 0.5rem;
+}
+/* MAIN */
+.tabella{
+    border:solid #0d77bd;
+}
+th, td{
+    border:solid #0d77bd;
+}
+
+.video{
+    border-radius: 10px 10px 10px 10px;
+}
+
+.sotto{
+    
+    text-align: center;
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
