@@ -1,0 +1,68 @@
+.title{
+    background-color: black;
+    width: 100pz;
+    font-size: 200px;
+}
+.notebook{
+    border-radius: 80px;
+}
+.bottone{
+    border: solid 1px;
+    background-color: orangered;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.banner{
+    background-image: url(../immagini/banner.jpg);
+}
+body{
+    background-image: url(../immagini/banner.jpg);
+    font-size: 1rem;
+    line-height: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 400;
+    text-align: center;
+    padding-left: 10px;
+    flex-grow: 4;
+} 
+
+
+.primo-blocco , img{
+    
+    text-align: center;
+    padding: 20px;
+    
+}
+.secondo-blocco{
+    padding-top: 50px;
+    background-color: red;
+    height: 500px;
+    color: white;
+}
+
+h1{
+    color:#008baa ;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 2rem;
+    background-color: none;
+}
+h2{
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 2rem;
+}
+footer{
+    background-color: #008baa ;
+    height: 200px;
+}
+.parte-finale{
+    color: white;
+}
+img{
+    background-image: none;
+    padding: 20px;
+
+}
