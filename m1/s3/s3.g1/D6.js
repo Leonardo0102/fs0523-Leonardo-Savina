@@ -2,29 +2,29 @@
   Scrivi una funzione per concatenare due stringhe ricevute come parametri, selezionando solamente i primi 2 caratteri della
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log().
 */
-function primoEsercizio(a,b){
-  const primiDue= a.slice(0,2);
-  const ultimiTre= b.slice(-3);
-  const risultato= primiDue + ultimiTre;
-  return risultato.toUpperCase();
+function concatenaStringa(str1,str2){
+  str1=str1.slice(0,2);
+  str2=str2.slice(-3);
+  return (str1+str2).toUpperCase()
 }
-const a='studiare';
-const b='epicode';
-const risultato= primoEsercizio(a,b);
-console.log(risultato);
+ console.log(concatenaStringa('hello','world'))
+
+
+
 
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
+function randomArray(){
+  let arr =[]
+  for(let i=0; i<10; i++){
+    arr.push(Math.floor(Math.random()*101));
+  }
+  return arr;
+}
+console.log(randomArray());
+console.log(randomArray());
 
-function numeriCasuali(){
-let array=[]
-for(let i=0; i<10; i++){
-  array.push(math.floor(math.random()*100));
-}
-return array;
-}
-console.log(numeriCasuali)
 // ESERCIZIO 3 (filter)
   
 
@@ -33,70 +33,24 @@ console.log(numeriCasuali)
 ESERCIZIO 4 (forEach)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
-function esercizioQuattro(...numeri){
-  let risultato=0;
 
-numeri.forEach( num => risultato +=num)
-return(risultato);
-}
-
-console.log(esercizioQuattro(14,43,23,9,8,56,65));
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
-const numeri=[12,23,32,65];
-const somma= numeri.reduce(function(result,item){
-  return result + item;
-},0);
-console.log(somma);
 
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
-const arrayNumeriDue=[11,12,13,14,15,16];
-function incremento(array,n){
-  const incremento=array.map(function(numero){
-    return numero+n;
-  });
-return arrayNumeriDue
-}
-const n=10
-const risultato3=incremento(arrayNumeriDue,n);
-console.log(risultato3);
 
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
 
-function lunghezzaStringhe(arrayDiStringhe) {
-  const lunghezze = arrayDiStringhe.map(function(stringa) {
-    return stringa.length;
-  });
-
-  return lunghezze;
-}
-
-
-const arrayDiStringhe = ["EPICODE", "is", "great"];
-const risultato5 = lunghezzaStringhe(arrayDiStringhe);
-console.log(risultato); 
 
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
-
-function arrayDispari(){
-  const arrayDispari=[];
-  for(i=1; i<99; i+=2){
-    arrayDispari.push(i)
-
-  }
-  return arrayDispari;
-
-}
-const risultatoDue= arrayDispari();
-console.log(risultatoDue);
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
