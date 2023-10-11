@@ -1,0 +1,52 @@
+h1{
+    color: coral;
+    font-size: 100px;
+    text-align: center;
+    background-color: brown;
+    margin-bottom: 10px;
+    padding-bottom: 40px ;
+}
+
+#menu{
+    text-align: center;
+   background-color: rgb(232, 232, 165);
+  
+   height: 80px;
+   margin-left: 80px;
+   margin-right: 80px;
+
+}
+#new-task{
+    margin-top: 20px;
+   font-size: 30px;
+    background-color: azure;
+    border-radius: 20px;
+}
+#new-task-btn{
+    font-size: 20px;
+    color: black;
+    background-color: burlywood;
+}
+#clear-btn{
+    font-size: 15px;
+    background-color: bisque;
+
+}
+.staffy{
+    height: 100%;
+    padding-top: 0%;
+    border-top: 0;
+    text-align: center;
+    border-radius: 50px;
+    margin: auto;
+    background-color:black
+
+}
+.staffy img{
+    border-radius: 50px;
+    width: 300px;
+}
+
+body{
+    background-color: gray;
+}
