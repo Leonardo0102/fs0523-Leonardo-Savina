@@ -1,0 +1,60 @@
+
+@media screen and(min-width:320px){
+    .contenitore{
+        background-color: blue;
+        width: 100%;
+        height: 40px;
+        max-width: calc(100% / 2 - 1.4rem);
+        margin: 0 auto;
+    }
+    .insieme{
+        
+        width: 100%;
+        height: 30px;
+        display: inline-block;
+        display: flex;
+        margin: 0 auto;
+    }
+  
+    
+}
+
+
+
+
+
+@media screen and (min-width:1200px) {
+    .headerp{
+        height: 100px;
+        
+    }
+    .contenitore{
+        background-color: blue;
+        width: 1200px;
+       max-width: calc(100% / 2 - 1.4rem);
+        margin: 0 auto;
+       
+       
+
+    }
+    .insieme{
+        width:100%;
+        height: 200px;
+        display: inline-block;
+        display: flex;
+        
+    
+       
+        
+    }
+    
+} 
+
+@media print{
+    body{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+
+
