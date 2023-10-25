@@ -1,0 +1,41 @@
+.title{
+	font-size: 30px;
+	font-weight: 600;
+	color:#742305;
+	padding-top: 20px;
+	
+}
+#container{
+	
+	background-color:#fef7e2;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+	border-radius: 20px;
+	height: 580px;
+	width:  auto;
+	display: flex;
+	
+	flex-direction: row;
+	
+	
+}
+.lorem{
+	padding-top: 5px;
+	padding-left: 5px;
+	color: #742305;
+	
+	
+}
+img{
+	padding-top: 20px;
+	width: 310px;
+	height: 300px;
+	
+}
+.miele{
+	flex-basis: 50%;
+}
+.princ{
+	flex-basis: 50%;
+}
