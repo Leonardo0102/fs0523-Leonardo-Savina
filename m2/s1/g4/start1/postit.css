@@ -1,0 +1,131 @@
+#container {
+  height: 80vh;
+  background-color: #666666;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  max-width: 140vh;
+  margin: auto;
+  text-align: center;
+  font-size: large;
+  font-weight: 700;
+}
+
+#sottocont {
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+}
+
+.black-area {
+  height: 50vh;
+  background-color: black;
+}
+
+.task1 {
+  width: 220px;
+  height: 150px;
+  background-color: #f3f4c0;
+  transform: rotate(-5deg);
+  margin-top: 30px;
+}
+.task2 {
+  width: 250px;
+  height: 150px;
+  background-color: #c9faca;
+  transform: rotate(5deg);
+  animation-name: rotea;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+.task3 {
+  width: 250px;
+  height: 150px;
+  background-color: #c5c5f0;
+  transform: rotate(-5deg);
+  animation-name: muovi;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.task4 {
+  width: 250px;
+  height: 150px;
+  background-color: #c9faca;
+  transform: rotate(5deg);
+}
+.task5 {
+  width: 250px;
+  height: 150px;
+  background-color: #f3f4c0;
+  transform: rotate(-5deg);
+}
+.task6 {
+  width: 250px;
+  height: 150px;
+  background-color: #c5c5f0;
+  transform: rotate(-7deg);
+}
+.task7 {
+  width: 250px;
+  height: 150px;
+  background-color: #f3f4c0;
+  transform: rotate(-3deg);
+  animation-name: rotea;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+
+.task8 {
+  width: 250px;
+  height: 150px;
+  background-color: #c9faca;
+  transform: rotate(2deg);
+  animation-name: rotea;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transform-origin: top;
+}
+
+.task1:hover {
+  transform: scale(1, 5);
+  background-color: aqua;
+}
+
+@keyframes rotea {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes muovi {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.task8:hover {
+  transform: scale(1.5);
+  background-color: black;
+}
