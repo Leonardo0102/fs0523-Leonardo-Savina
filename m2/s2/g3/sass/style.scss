@@ -1,0 +1,34 @@
+@import 'variabili';
+@import 'animazioni';
+@import 'bottoni';
+@import 'colori';
+@import 'font';
+@import 'mixinsGenerici';
+@import 'reset';
+@import 'spaziature';
+@import 'variabili';
+
+
+h1{
+    color:map-get($color-map,testo );
+    font-size: nth($sizes,3);
+};
+
+body{
+    background-color:map-get($color-map,bg_hero);
+};
+
+.bottoneDue{
+    background-color: map-get($color-map,bottoneOrange);
+    color:map-get($color-map,testo);
+}
+
+.bottoneUno{
+    background-color: map-get($color-map,bottoneBlue);
+    color:map-get($color-map,testo);
+}
+
+.bottoneTre{
+    background-color: map-get($color-map,bottoneGreen);
+    color:map-get($color-map,testo);
+}
