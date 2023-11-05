@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>clone netflix</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="barra">
+        <div class="container bg-black" data-bs-theme="dark">
+          <div
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+          >
+            <a
+              href="/"
+              class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none"
+            >
+              <svg
+                class="bi me-2"
+                width="40"
+                height="42"
+                role="img"
+                aria-label="Bootstrap"
+              >
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+              
+            </a>
+          
+            <ul
+              class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
+            >
+            
+              <li>
+                <img class="logo img-fluid" src="  images/netflix_logo.png" />
+              </li>
+              <li>
+                <a href="#" class="nav-link px-2 link-body-emphasis">home</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link px-2 link-body-emphasis"
+                  >TV Shows</a
+                >
+              </li>
+              <li>
+                <a href="#" class="nav-link px-2 link-body-emphasis">Movies</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link px-2 link-body-emphasis"
+                  >Recently Added</a
+                >
+              </li>
+              <li>
+                <a href="#" class="nav-link px-2 link-body-emphasis">MyList</a>
+              </li>
+             
+            </ul>
+            <a><i class="bi bi-search text-white mx-2"></i></a>
+            
+            <a href="#" class="text-decoration-none"> <p class="text-white my-2">kids</p></a>
+           <a href="#"><i class="bi bi-bell-fill text-white mx-2"></i></a>
+            
+           
+            
+
+            <div class="dropdown text-end">
+              <a
+                href="#"
+                class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="images/avatar.png"
+                  alt="mdo"
+                  width="32"
+                  height="32" 
+                  >
+                              
+              </a>
+
+              <ul class="dropdown-menu text-small">
+                <li><a class="dropdown-item" href="#">Account</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+          >
+            <h3>Tv Shows</h3>
+
+            <div class="dropdown-center px-2">
+              <button
+                class="bottone btn btn-secondary dropdown-toggle bg-black"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                genere
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Action two</a></li>
+                <li><a class="dropdown-item" href="#">Action three</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bottoncini d-flex flex-row-reverse">
+            <button type="button" class="btn btn-outline-light opacity-25 bg-bg-white" data-bs-theme="dark ">
+           
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-list "
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                ></path>
+              </svg>
+            </button>
+            <button type="button" class="btn btn-secondary opacity-25">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-list"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container bg-black mt-5">
+      <div class="row g-1">
+        <h2 class="text-white">Trending Now</h2>
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card">
+            <img src="images/media10.jpg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card">
+            <img src="images/media11.jpg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card">
+            <img src="images/media12.jpg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card">
+            <img src="images/media13.jpg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card">
+            <img src="images/media14.webp" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card">
+            <img src="images/media15.jpg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container bg-black mt-5" data-bs-theme="dark">
+      <div class="row g-1">
+        <h2 class="text-white">watch it Again</h2>
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card">
+            <img src="images/media16.webp" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card">
+            <img src="images/media17.jpg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card">
+            <img src="images/media18.jpg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card">
+            <img src="images/media19.webp" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card">
+            <img src="images/media20.jpg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card">
+            <img src="images/media21.webp" class="card-img-top" alt="..." />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container bg-black mt-5" data-bs-theme="dark">
+      <div class="row g-1">
+        <h2 class="text-white">New Releases</h2>
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card">
+            <img src="images/media22.webp" class="card-img-th" alt="..." />
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card">
+            <img src="images/media23.webp" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card">
+            <img src="images/media24.jpg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card">
+            <img src="images/media25.webp" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card">
+            <img src="images/media26.webp" class="card-img-top" alt="..." />
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="card">
+            <img src="images/media27.jpg" class="card-img-top" alt="..." />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="container">
+
+    
+
+    <footer
+      class=" row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
+      data-bs-theme="dark"
+    >
+      <div class="col mb-3">
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+        >
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <p class="text-body-secondary">© 2023</p>
+      </div>
+
+      <div class="col mb-3"></div>
+
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+  </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script/app.js"></script>
+  </body>
+</html>

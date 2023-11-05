@@ -1,0 +1,56 @@
+body {
+  background-color: black;
+}
+
+.barra {
+  height: 80px;
+  width: 1400px;
+}
+
+.logo {
+  max-width: 80px;
+  max-height: 50px;
+  margin-top: 5px;
+
+}
+
+.container {
+  width: 1400px;
+}/*# sourceMappingURL=style.css.map */
+
+h3{
+  font-size: 40px;
+  font-weight: 600;
+  margin-left: 50px;
+  color:white;
+}
+
+.bottone{
+  width: 90px;
+  font-size: 1rem;
+  margin-right: 100px;
+  
+}
+
+.bottoncini{
+  padding-bottom: 50px;
+  color:white;
+  
+}
+
+
+
+h2{
+  font-size: 20px;
+}
+
+
+.profiloImg{
+ width: 100px;
+ height: 100px;
+}
+
+.strive{
+  width: 200px;
+  height: 30px;
+}
