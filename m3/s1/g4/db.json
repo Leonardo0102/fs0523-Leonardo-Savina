@@ -1,0 +1,34 @@
+[
+
+    {
+        "id": 1,
+        "codprod": 2334,
+        "collezione": "Armani",
+        "capo": "Maglione",
+        "modello": 1,
+        "quantita": 122,
+        "colore": "Blu",
+        "prezzoivaesclusa": 200,
+        "prezzoivainclusa": 260,
+        "disponibile": true,
+        "saldo": 5
+      },
+      {
+        "id": 2,
+        "codprod": 124,
+        "collezione": "Primavera 2023",
+        "capo": "Giacca",
+        "modello": 2,
+        "quantita": 15,
+        "colore": "Nero",
+        "prezzoivaesclusa": 80,
+        "prezzoivainclusa": 100,
+        "disponibile": false,
+        "saldo": 0
+      }
+
+
+
+
+
+]
